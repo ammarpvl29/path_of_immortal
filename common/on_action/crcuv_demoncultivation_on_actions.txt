@@ -1,8 +1,8 @@
 on_game_start = {
-	every_year = {
-		trigger = {
-			is_normal_cultivator = yes
-		}
+	trigger = {
+		is_normal_cultivator = yes
+	}
+	effect = {
 		random_list = {
 			10 = {
 				add_trait = demon	
