@@ -1,0 +1,235 @@
+devour_cultivation_effect = {
+    if = {
+        limit = {
+            OR = {
+                is_qi_gathering_cultivator = yes
+                is_dark_qi_absorption_cultivator = yes
+            }
+        }
+        add_trait_xp = {
+            trait = qi_gathering
+            value = 18
+        }
+        add_trait_xp = {
+            trait = dark_qi_absorption
+            value = 18
+        }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                is_foundation_establishment_cultivator = yes
+                is_corruption_foundation_cultivator = yes
+            }
+        }
+        add_trait_xp = {
+            trait = foundation_establishment
+            value = 15
+        }
+        add_trait_xp = {
+            trait = corruption_foundation
+            value = 15
+        }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                is_nether_formation_cultivator = yes
+                is_core_formation_cultivator = yes    
+            }
+        }
+        add_trait_xp = {
+            trait = core_formation
+            value = 12
+        }
+        add_trait_xp = {
+            trait = nether_formation
+            value = 12
+        }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                is_nascent_soul_cultivator = yes
+                is_infernal_soul_cultivator = yes
+            }
+        }
+        add_trait_xp = {
+            trait = nascent_soul
+            value = 9
+        }
+        add_trait_xp = {
+            trait = infernal_soul
+            value = 9
+        }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                is_spirit_severing_cultivator = yes
+                is_spirit_corruption_cultivator = yes
+            }
+        }
+        add_trait_xp = {
+            trait = spirit_severing
+            value = 6
+        }
+        add_trait_xp = {
+            trait = spirit_corruption
+            value = 6
+        }
+    }
+    else_if = {
+        limit = {
+            OR = {
+                is_dao_seeking_cultivator = yes
+                is_demonic_ascendancy_cultivator = yes
+            }
+        }
+        add_trait_xp = {
+            trait = dao_seeking
+            value = 3
+        }
+        add_trait_xp = {
+            trait = demonic_ascendancy
+            value = 3
+        }
+    }
+}
+
+devour_cultivation_thrice_effect = {
+    devour_cultivation_effect = yes
+    devour_cultivation_effect = yes
+    devour_cultivation_effect = yes
+}
+
+
+become_devourer_effect = {
+    set_nickname_effect = { NICKNAME = nick_the_heaven_devourer }
+    add_trait = devouring
+    add_prestige = 3000
+    devour_cultivation_thrice_effect = yes
+}
+
+become_demon_effect = {
+    add_trait = demon
+    devour_cultivation_effect = yes
+    if = {
+        limit = {
+            is_qi_gathering_cultivator = yes
+        }
+        remove_trait = qi_gathering
+        add_trait = dark_qi_absorption
+    }
+    else_if = {
+        limit = {
+            is_foundation_establishment_cultivator = yes
+        }
+        remove_trait = foundation_establishment
+        add_trait = corruption_foundation
+    }
+    else_if = {
+        limit = {
+            is_core_formation_cultivator = yes
+        }
+        remove_trait = core_formation
+        add_trait = nether_formation
+    }
+    else_if = {
+        limit = {
+            is_nascent_soul_cultivator = yes
+        }
+        remove_trait = nascent_soul
+        add_trait = infernal_soul
+    }
+    else_if = {
+        limit = {
+            is_spirit_severing_cultivator = yes
+        }
+        remove_trait = spirit_severing
+        add_trait = spirit_corruption
+    }
+    else_if = {
+        limit = {
+            is_dao_seeking_cultivator = yes
+        }
+        remove_trait = dao_seeking
+        add_trait = demonic_ascendancy
+    }
+    else_if = {
+        limit = {
+            is_demon_spirit_cultivator = yes
+        }
+        remove_trait = demon_spirit
+        add_trait = demon_spirit
+    }
+}
+
+become_humancultivator_effect = {
+    add_trait = human_cultivator
+}
+
+demon_breakthrough_decision_effect = {
+    demon_breakthrough_effect = yes
+}
+
+demon_breakthrough_effect = {
+    if = {
+        limit = {
+            OR = {
+                has_trait = dark_qi_absorption
+                has_trait = corruption_foundation
+                has_trait = nether_formation
+                has_trait = infernal_soul
+                has_trait = spirit_corruption
+                has_trait = demonic_ascendancy
+            }
+        }
+        change_trait_rank = {
+            trait = demon_cultivation_realm
+            rank = 1
+        }
+    }
+    else_if = {
+        limit = {
+            has_trait = dark_qi_absorption
+        }
+        remove_trait = dark_qi_absorption
+        add_trait = corruption_foundation
+    }
+    else_if = {
+        limit = {
+            has_trait = corruption_foundation
+        }
+        remove_trait = corruption_foundation
+        add_trait = nether_formation
+    }
+    else_if = {
+        limit = {
+            has_trait = nether_formation
+        }
+        remove_trait = nether_formation
+        add_trait = infernal_soul
+    }
+    else_if = {
+        limit = {
+            has_trait = infernal_soul
+        }
+        remove_trait = infernal_soul
+        add_trait = spirit_corruption
+    }
+    else_if = {
+        limit = {
+            has_trait = spirit_corruption
+        }
+        remove_trait = spirit_corruption
+        add_trait = demonic_ascendancy
+    }
+    else_if = {
+        limit = {
+            has_trait = demonic_ascendancy
+        }
+        remove_trait = demonic_ascendancy
+        add_trait = demon_spirit
+    }
+}

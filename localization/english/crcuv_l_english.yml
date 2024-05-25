@@ -1,0 +1,158 @@
+﻿l_english:
+    # Artifact
+    immaculate_vitality_blossom:0 "Immaculate Vitality Blossom"
+    immaculate_vitality_blossom_description:0 "Heaven-defying treasure, the Immaculate Vitality Blossom purifies, preserves, and strengthens the flesh body instead of the Divine Soul"
+
+    # decisions
+    become_devourer_decision:0 "Become the Heaven's Devourer"
+    become_devourer_decision_confirm:0 "I will go beyond my limitation!"
+    become_devourer_decision_desc:0 "In the realm of cultivation, there exists a forbidden technique, feared even by the heavens. This technique allows the cultivator to become a Devourer, capable of absorbing and devouring the cultivation base of others. By choosing this path, you embrace a power that can shake the heavens and disrupt the natural order. But beware, for such power comes with a price. The heavens do not take kindly to those who defy the natural order."
+    become_devourer_decision_tooltip:0 "Become the Heaven's Devourer"
+
+    become_demon_decision:0 "Embrace the Demonic Path"
+    become_demon_decision_desc:0 "Choosing this path will grant you immense power at a cost. The energies you wield will be potent but volatile, and your subjects may fear or resent your newfound might."
+    become_demon_decision_confirm:0 "A necessary way to gain power."
+    become_demon_decision_tooltip:0 "Beware, for this path may lead to internal strife and external threats"
+
+    become_humancultivation_decision:0 "Follow the Orthodox Way"
+    become_humancultivation_decision_desc:0 "By embracing the human cultivation way, you align yourself with the cosmic order, gaining the respect of your peers and a serene command over your realm."
+    become_humancultivation_decision_confirm:0 "Let's just cultivate the normal way"
+    become_humancultivation_decision_tooltip:0 "This harmonious way will strengthen your bonds with vassals and allies"
+
+    cultivate_in_seclusion_decision:0 "Enter Seclusion for Cultivation"
+    cultivate_in_seclusion_decision_confirm:0 "Enter Seclusion"
+    cultivate_in_seclusion_decision_desc:0 "Seclusion is a crucial part of any cultivator's journey. By isolating yourself from the distractions of the mortal world, you can focus entirely on refining your body, mind, and soul. During this period, you will meditate deeply, absorb spiritual energy, and attempt to break through to higher levels of power. The path of cultivation is fraught with challenges, but those who succeed can achieve extraordinary feats."
+    cultivate_in_seclusion_decision_tooltip:0 "Enter a period of seclusion to focus on your cultivation. This will grant you significant experience and possibly help you break through to the next realm."
+    cultivate_in_seclusion_tooltip:0 "The insights and energy you will gained during this period will converted into your [Concept('trait_level_track_xp', 'cultivation base')|E]."
+
+
+    demon_breakthrough_decision_1:0 "Embrace Corruption"
+    demon_breakthrough_decision_1_confirm:0 "Embrace the Corruption"
+    demon_breakthrough_decision_1_desc:0 "You stand at the threshold of power, ready to embrace the corruption that lies beyond. This decision marks your transition from merely absorbing dark qi to laying the foundation of corruption within your soul. With this step, you open yourself to darker energies, paving the way for greater demonic power and influence. Are you prepared to take this irreversible step into the depths of darkness?"
+    demon_breakthrough_decision_1_selection_tooltip:0 "Embrace the Corruption\:\ Advance from Dark Qi Absorption to Corruption Foundation."
+
+    demon_breakthrough_decision_2:0 "Transcendence of Corruption"
+    demon_breakthrough_decision_2_confirm:0 "Transcend the Corruption"
+    demon_breakthrough_decision_2_desc:0 "As you continue your journey into the depths of demonic cultivation, you stand on the brink of transcendence. The corruption within you has laid the foundation for even darker energies to take hold. With this breakthrough, you step into the realm of Nether Formation, where the very fabric of reality bends to your will. Are you ready to embrace this new level of darkness and power?"
+    demon_breakthrough_decision_2_selection_tooltip:0 "Transcend the Corruption\:\ Advance from Corruption Foundation to Nether Formation."
+
+    demon_breakthrough_decision_3:0 "Awakening of the Infernal Soul"
+    demon_breakthrough_decision_3_confirm:0 "Awaken the Infernal Soul"
+    demon_breakthrough_decision_3_desc:0 "In the depths of your cultivation, you have reached a pivotal moment. Your journey through the Nether Formation has honed your connection to the darkest realms of existence. Now, your soul undergoes a profound transformation as it awakens to its infernal nature. With this breakthrough, you become a vessel of infernal power, capable of wielding the fires of damnation. Are you prepared to embrace the inferno within and ascend to new heights of demonic might?"
+    demon_breakthrough_decision_3_selection_tooltip:0 "Awaken the Infernal Soul\:\ Advance from Nether Formation to Infernal Soul."
+
+    demon_breakthrough_decision_4:0 "Embrace Spiritual Corruption"
+    demon_breakthrough_decision_4_confirm:0 "Embrace the Corruption"
+    demon_breakthrough_decision_4_desc:0 "As you delve deeper into the abyss of demonic cultivation, you confront a new challenge. Your infernal soul, once a beacon of dark power, now yearns for greater corruption. With this breakthrough, you embrace the spiritual corruption that permeates the essence of your being. Your soul becomes a vessel for twisted energies, bending the fabric of reality to your will. Are you ready to embrace this spiritual corruption and harness its immense power?"
+    demon_breakthrough_decision_4_selection_tooltip:0 "Embrace the Corruption\:\ Advance from Infernal Soul to Spirit Corruption."
+
+    demon_breakthrough_decision_5:0 "Rise to Demonic Ascendancy"
+    demon_breakthrough_decision_5_confirm:0 "Rise to Ascendancy"
+    demon_breakthrough_decision_5_desc:0 "You stand at the precipice of ultimate power, your journey through the depths of spiritual corruption nearing its climax. With each step, your connection to the demonic realm grows stronger, and now, you are on the verge of ascending to the pinnacle of demonic cultivation. This breakthrough marks the moment when you transcend mortal limitations, becoming a true master of infernal energies. The very earth trembles beneath your feet as you prepare to claim your rightful place among the ancient cultivators on earth. Are you ready to rise to Demonic Ascendancy and unleash your boundless power upon the world?"
+    demon_breakthrough_decision_5_selection_tooltip:0 "Rise to Ascendancy\:\ Advance from Spirit Corruption to Demonic Ascendancy."
+
+    demon_breakthrough_decision_6:0 "Embrace the Demon Spirit"
+    demon_breakthrough_decision_6_confirm:0 "Embrace the Spirit"
+    demon_breakthrough_decision_6_desc:0 "You have reached the zenith of demonic cultivation, your power rivaling that of the ancient titans of darkness. As you stand upon the pinnacle of Demonic Ascendancy, a profound choice lies before you. Will you embrace the essence of the Demon Spirit, solidifying your reign as one of the strongest cultivators on Earth? Or will you heed the whispers of ancient lore, relinquishing your earthly power to ascend to the fabled Gods Realm? The choice is yours, but remember, with great power comes great responsibility. Are you prepared to shape the fate of worlds with your decision?"
+    demon_breakthrough_decision_6_selection_tooltip:0 "Embrace the Spirit\:\ Advance from Demonic Ascendancy to Demon Spirit."
+
+    # Interactions
+    devouring_cultivation_interaction:0 "Devour prisoner's cultivation"
+    devouring_cultivation_interaction_desc:0 "Devour cultivation base"
+    devour_cultivation_tooltip:0 "You will constume this person's cultivation base"
+
+    # Trait
+    trait_devouring:0 "Unlimited potential"
+    trait_devouring_desc:0 "Devours have the power to absorb others cultivation bases, possessing limitless potential that even the heavens fear."
+    trait_devouring_character:0 "The Devours"
+    trait_track_devour:0 "Devours stages"
+    trait_track_devour_desc:0 "Stages of ability to devour cultivation"
+    
+    trait_demon:0 "Demon Qi"
+    trait_demon_desc:0 "Reputed for utilizing demonic techniques in [ROOT.GetCharacter.GetHerHis] cultivation, earning the label of a demonic cultivator."
+    trait_demon_character:0 "Demonic Cultivator"
+
+    trait_human_cultivator:0 "Nature Qi"
+    trait_human_cultivator_desc:0 "This character has chosen the path of the human cultivator, seeking enlightenment and power through harmony with the natural order. Their journey is one of balance, virtue, and inner strength."
+    trait_human_cultivator_character:0 "Human Cultivator"
+
+    trait_dark_qi_absorption_desc:0 "Dark Qi Cultivation represents your initiation into the forbidden arts of demonic energy manipulation. As a Dark Qi Absorber, you are a novice in the realm of demonic cultivation, learning to harness the dark energies that permeate the world."
+    trait_dark_qi_absorption:0 "Dark Qi Absorber"
+    trait_dark_qi_absorption_character:0 "Dark Qi Absorption"
+    trait_track_dark_qi:0 "Dark Qi Cultivation"
+    trait_track_dark_qi_desc:0 "Stages of Dark Qi Absorption"
+
+    trait_corruption_foundation_desc:0 "Corruption Cultivation signifies your advancement beyond mere absorption of dark qi. As a Corruption Founder, you have laid the foundation for deeper corruption within your soul, tapping into the twisted energies that flow through the abyss."
+    trait_corruption_foundation:0 "Corruption Founder"
+    trait_corruption_foundation_character:0 "Corruption Foundation"
+    trait_track_foundation:0 "Corruption Cultivation"
+    trait_track_foundation_desc:0 "Stages of Corruption Foundation"
+
+    trait_nether_formation_desc:0 "Nether Cultivation marks your transition into the deeper layers of demonic energy manipulation. As a Nether Former, you have learned to harness the chaotic energies of the nether realms, shaping them to your will."
+    trait_nether_formation:0 "Nether Former"
+    trait_nether_formation_character:0 "Nether Formation"
+    trait_track_nether:0 "Nether Cultivation"
+    trait_track_nether_desc:0 "Stages of Nether Cultivation"
+
+    trait_infernal_soul_desc:0 "Infernal Cultivation symbolizes your mastery over infernal energies, marking the awakening of your soul to its infernal nature. As an Infernal Soulbearer, you wield the fires of damnation with unparalleled skill, scorching your foes and shaping reality to your will."
+    trait_infernal_soul:0 "Infernal Soulbearer"
+    trait_infernal_soul_character:0 "Infernal Soul"
+    trait_track_soul:0 "Infernal Cultivation"
+    trait_track_soul_desc:0 "Stages of Infernal Cultivation"
+
+    trait_spirit_corruption_desc:0 "Spiritual Corruption signifies your mastery over corruptive spiritual energies, twisting the very essence of your being. As a Spirit Corruptor, you wield the twisted powers of corruption, bending reality to your will and spreading darkness wherever you tread."
+    trait_spirit_corruption:0 "Spirit Corruptor"
+    trait_spirit_corruption_character:0 "Spirit Corruption"
+    trait_track_corruption:0 "Spiritual Corruption"
+    trait_track_corruption_desc:0 "Stages of Spiritual Corruption"
+
+    trait_demonic_ascendancy_desc:0 "Ascendant Cultivation marks your rise to the pinnacle of demonic power on Earth, heralding your mastery over infernal energies. As a Demonic Ascendant, you stand as a titan among mortals, your presence commanding fear and awe."
+    trait_demonic_ascendancy:0 "Demonic Ascendant"
+    trait_demonic_ascendancy_character:0 "Demonic Ascendancy"
+    trait_track_demonic_essence:0 "Ascendant Cultivation"
+    trait_track_demonic_essence_desc:0 "Stages of Demonic Ascendancy"
+
+    trait_demon_spirit_desc:0 "Demonic Mastery signifies your ultimate attainment in the realm of demonic cultivation on Earth, marking your transcendence into a being of pure demonic essence. As a Demon Spirit, your power knows no bounds, your very existence shaping the fabric of reality."
+    trait_demon_spirit:0 "Demon Essence"
+    trait_demon_spirit_character:0 "Demon Spirit"
+    trait_track_spirit:0 "Demonic Mastery"
+    trait_track_spirit_desc:0 "Pinnacle of Demonic Cultivation"
+
+    # Event
+    cultivate_decisions.2001.t:0 "The Path of the Devourer"
+    cultivate_decisions.2001.desc:0 "Having chosen the forbidden technique, you now walk the path of the Devourer. The heavens tremble as you absorb and devour the cultivation base of others.\nThis power, feared even by the heavens, is now yours. But remember, the heavens watch, and they do not take kindly to those who disrupt the natural order."
+    cultivate_decisions.2001.a:0 "Embrace the path, become the Devourer"
+
+    cultivate_decisions.2002.t:0 "The Dark Path Beckons"
+    cultivate_decisions.2002.desc:0 "You have walked the path of cultivation, seeking enlightenment and power. But recently, a whispering voice has crept into your meditations, promising strength beyond mortal comprehension. This voice, dark and seductive, offers you a path paved with shadows and blood—a path of demonic cultivation.\n\nTo embrace this dark power is to abandon the restraints of morality, embracing a life of ruthless ambition and endless conflict.\n\nBut this path comes at a steep price, one that will forever mark your soul and change the destiny of your lineage. The choice is yours, will you succumb to the darkness, allowing it to consume you and transform you into a being of fearsome might, or will you resist its call, preserving your humanity and the purity of your soul?"
+    cultivate_decisions.2002.a:0 "Prepare to tread a path where only the strongest survive, and the weak are crushed."
+
+    cultivate_decisions.2003.t:0 "The Path of Righteousness"
+    cultivate_decisions.2003.desc:0 "Your journey of cultivation has been one of discipline and inner peace, seeking harmony with the natural order and the cultivation of your mind and body. The path of human cultivation is one of profound wisdom, where enlightenment and true power are achieved through balance, righteousness, and respect for the laws of nature and society. As you sit in meditation, you feel a serene energy flow through you, guiding you towards a future where your power is a reflection of your moral integrity and spiritual purity.\n\nThis path is not without its challenges, but it is one that brings honor to your lineage and the promise of true enlightenment. It will lead you to a destiny of respect and revered wisdom, with power that grows steadily like a mighty tree, rooted deeply in the earth."
+    cultivate_decisions.2003.a:0 "Your journey will be one of inner peace and moral fortitude."
+
+    EXECUTION_DEVOUR_CULTIVATION:0 "Absorb their cultivation!"
+
+    cultivate_decisions.2020.t:0 "Founding Corruption"
+    cultivate_decisions.2020.desc:0 "As you embrace the darkness and delve deeper into the forbidden arts of demonic cultivation, you feel a profound shift within your soul. The foundation of corruption takes hold, twisting and shaping your essence to better harness the dark energies that surround you. From this moment forth, your journey into darkness takes on a new meaning, as you ascend to the ranks of those who wield the power of corruption with purpose and mastery."
+    cultivate_decisions.2020.a:0 "Embrace the Corruption"
+
+    cultivate_decisions.2021.t:0 "Unveiling the Abyss"
+    cultivate_decisions.2021.desc:0 "With each step deeper into the abyss of demonic cultivation, you feel the boundaries of your power expand. The foundation of corruption within your soul now serves as a gateway to the nether realms, where chaotic energies swirl and twist in the darkness. As you unlock the secrets of Nether Formation, you realize that you are no longer bound by mortal limitations. Embrace the chaos and master the energies that lie beyond, for you are destined for greatness."
+    cultivate_decisions.2021.a:0 "Embrace the Chaos"
+
+    cultivate_decisions.2022.t:0 "Awakening Infernal Power"
+    cultivate_decisions.2022.desc:0 "As you delve deeper into the abyss of demonic cultivation, a profound transformation takes place within your soul. The chaotic energies of the nether realms surge through you, igniting the flames of damnation within. With the awakening of your Infernal Soul, you become a conduit for infernal power, capable of wielding the fires of hell itself. Embrace the inferno within and let its flames guide you to new heights of darkness and might."
+    cultivate_decisions.2022.a:0 "Embrace the Inferno"
+
+    cultivate_decisions.2023.t:0 "Embrace Spiritual Corruption"
+    cultivate_decisions.2023.desc:0 "With each step along your path of demonic cultivation, your connection to the spiritual realms deepens. The flames of damnation within your soul now intertwine with the corruptive energies of the spirit world, weaving a tapestry of darkness and power. As you embrace the spiritual corruption, you transcend mortal limitations, becoming a harbinger of twisted energies. Embrace the corruption within and let it guide you to new realms of spiritual darkness and dominance."
+    cultivate_decisions.2023.a:0 "Embrace the Corruption"
+
+    cultivate_decisions.2024.t:0 "Rise to Demonic Ascendancy"
+    cultivate_decisions.2024.desc:0 "As you continue your journey into the depths of demonic cultivation, you stand on the precipice of ultimate power. The spiritual corruption within your soul now serves as a conduit for infernal energies, channeling the darkest forces of the abyss. With your rise to Demonic Ascendancy, you become a titan among mortals, your presence commanding fear and awe. Embrace your newfound power and dominance, for you are destined to shape the fate of worlds and ascend to even greater heights of darkness and might."
+    cultivate_decisions.2024.a:0 "Rise to Ascendancy"
+
+    cultivate_decisions.2025.t:0 "Transcendence to Demon Spirit"
+    cultivate_decisions.2025.desc:0 "At the pinnacle of your journey through the depths of demonic cultivation, you stand as a beacon of infernal power. The energies of the abyss flow through you, intertwining with your very essence as you transcend mortal limitations. With your attainment of Demon Spirit, you become a god among mortals, your presence shaping the fabric of reality itself. Embrace your newfound divinity and ascend to the heavens, for you are destined for greatness beyond the mortal realm."
+    cultivate_decisions.2025.a:0 "Ascend to Divinity"

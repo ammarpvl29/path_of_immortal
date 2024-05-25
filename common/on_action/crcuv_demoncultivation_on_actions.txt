@@ -1,0 +1,938 @@
+on_game_start = {
+	every_year = {
+		trigger = {
+			is_normal_cultivator = yes
+		}
+		random_list = {
+			10 = {
+				add_trait = demon	
+			}
+			10 = {
+				add_trait = human_cultivator
+			}
+		}
+	}
+}
+
+#Pulses
+on_birthday = {
+	on_actions = {
+		demon_cultivator_on_birthday
+	}
+}
+
+demon_cultivator_on_birthday = {
+	trigger = {
+		is_cultivator = yes
+		has_trait = spiritual_roots
+	}
+	first_valid_on_action = { # since only one fires anyway
+		dark_qi_absorption_on_action
+		corruption_foundation_on_action
+		nether_formation_on_action
+		infernal_soul_on_action
+		spirit_corruption_on_action
+		demonic_ascendancy_on_action
+		demon_spirit_on_action
+	}
+	on_actions = {
+		delay = { days = 15 }
+		breakthrough_on_action
+	}
+}
+
+# Dark Qi absorption
+dark_qi_absorption_on_action = {
+	trigger = {
+		has_trait = dark_qi_absorption
+		NOT = {
+			has_trait_xp = {
+				trait = dark_qi_absorption
+				value = 100
+			}
+		}
+	}
+	first_valid_on_action = {
+		dark_qi_absorption_root_on_action
+		dark_qi_absorption_empty_on_action
+	}
+}
+
+dark_qi_absorption_root_on_action = {
+	trigger = {
+		has_trait = dark_qi_absorption
+        has_trait = spiritual_roots
+    }
+	effect = {
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 120 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 1
+					}
+				}
+				2 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 60 years
+			random_list = {
+				4 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 2
+					}
+				}
+				2 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 1
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 30 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 4
+					}
+				}
+				2 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 3
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 20 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 6
+					}
+				}
+				1 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 12 years
+			random_list = {
+				8 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 8
+					}
+				}
+				4 = {
+					add_trait_xp = {
+						trait = dark_qi_absorption
+						value = 9
+					}
+				}
+			}
+		}
+	}
+}
+
+dark_qi_absorption_empty_on_action = {}
+
+# Corruption Foundation
+corruption_foundation_on_action = {
+	trigger = {
+		has_trait = corruption_foundation
+		NOT = {
+			has_trait_xp = {
+				trait = corruption_foundation
+				value = 100
+			}
+		}
+	}
+	first_valid_on_action = {
+		corruption_foundation_root_on_action
+		corruption_foundation_empty_on_action
+	}
+}
+
+corruption_foundation_root_on_action = {
+	trigger = {
+		has_trait = corruption_foundation
+		has_trait = spiritual_roots
+	}
+	effect = {
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 240 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 1
+					}
+				}
+				14 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 120 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 1
+					}
+				}
+				2 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 60 years
+			random_list = {
+				4 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 2
+					}
+				}
+				2 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 1
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 40 years
+			random_list = {
+				2 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 3
+					}
+				}
+				2 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 2
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 24 years
+			random_list = {
+				4 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 5
+					}
+				}
+				20 = {
+					add_trait_xp = {
+						trait = corruption_foundation
+						value = 4
+					}
+				}
+			}
+		}
+	}
+}
+
+corruption_foundation_empty_on_action = {}
+
+# Nether Formation
+nether_formation_on_action = {
+	trigger = {
+		has_trait = nether_formation
+		NOT = {
+			has_trait_xp = {
+				trait = nether_formation
+				value = 100
+			}
+		}
+	}
+	first_valid_on_action = {
+		nether_formation_root_on_action
+		nether_formation_empty_on_action
+	}
+}
+
+nether_formation_root_on_action = {
+	trigger = {
+		has_trait = nether_formation
+		has_trait = spiritual_roots
+	}
+	effect = {
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 1080 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 1
+					}
+				}
+				98 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 540 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 1
+					}
+				}
+				44 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 270 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 1
+					}
+				}
+				17 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 180 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 1
+					}
+				}
+				8 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 108 years
+			random_list = {
+				100 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 1
+					}
+				}
+				0 = {
+					add_trait_xp = {
+						trait = nether_formation
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+nether_formation_empty_on_action = {}
+
+# Infernal Soul
+infernal_soul_on_action = {
+	trigger = {
+		has_trait = infernal_soul
+		NOT = {
+			has_trait_xp = {
+				trait = infernal_soul
+				value = 100
+			}
+		}
+	}
+	first_valid_on_action = {
+		infernal_soul_root_on_action
+		infernal_soul_empty_on_action
+	}
+}
+
+infernal_soul_root_on_action = {
+	trigger = {
+		has_trait = infernal_soul
+		has_trait = spiritual_roots
+	}
+	effect = {
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 3000 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 1
+					}
+				}
+				30 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 1500 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 1
+					}
+				}
+				14 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 750 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 1
+					}
+				}
+				65 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 500 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 1
+					}
+				}
+				4 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 300 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 1
+					}
+				}
+				2 = {
+					add_trait_xp = {
+						trait = infernal_soul
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+infernal_soul_empty_on_action = {}
+
+# Spirit Corruption
+spirit_corruption_on_action = {
+	trigger = {
+		has_trait = spirit_corruption
+		NOR = {
+			has_trait_xp = {
+				trait = spirit_corruption
+				value = 100
+			}
+		}
+	}
+	first_valid_on_action = {
+		spirit_corruption_root_on_action
+		spirit_corruption_empty_on_action
+	}
+}
+
+spirit_corruption_root_on_action = {
+	trigger = {
+		has_trait = spirit_corruption
+		has_trait = spiritual_roots
+	}
+	effect = {
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 6400 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 1
+					}
+				}
+				63 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 3200 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 1
+					}
+				}
+				31 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 1800 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 1
+					}
+				}
+				17 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 1200 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 1
+					}
+				}
+				11 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 640 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 1
+					}
+				}
+				54 = {
+					add_trait_xp = {
+						trait = spirit_corruption
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+spirit_corruption_empty_on_action = {}
+
+# Demonic Ascendancy
+demonic_ascendancy_on_action = {
+	trigger = {
+		has_trait = demonic_ascendancy
+		NOT = {
+			has_trait_xp = {
+				trait = demonic_ascendancy
+				value = 100
+			}
+		}
+	}
+	first_valid_on_action = {
+		demonic_ascendancy_root_on_action
+		demonic_ascendancy_empty_on_action
+	}
+}
+
+demonic_ascendancy_root_on_action = {
+	trigger = {
+		has_trait = demonic_ascendancy
+		has_trait = spiritual_roots
+	}
+	effect = {
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 9000 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 1
+					}
+				}
+				89 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 4500 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 1
+					}
+				}
+				44 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 2750 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 1
+					}
+				}
+				265 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 1825 years
+			random_list = {
+				100 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 1
+					}
+				}
+				1725 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 900 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 1
+					}
+				}
+				8 = {
+					add_trait_xp = {
+						trait = demonic_ascendancy
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+demonic_ascendancy_empty_on_action = {}
+
+# Demon Spirit
+demon_spirit_on_action = {
+	trigger = {
+		has_trait = demon_spirit
+		NOT = {
+			has_trait_xp = {
+				trait = demon_spirit
+				value = 100
+			}
+		}
+	}
+	first_valid_on_action = {
+		demon_spirit_root_on_action
+		demon_spirit_empty_on_action
+	}
+}
+
+demon_spirit_root_on_action = {
+	trigger = {
+		has_trait = demon_spirit
+		has_trait = spiritual_roots
+	}
+	effect = {
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 24000 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 1
+					}
+				}
+				239 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 12000 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 1
+					}
+				}
+				119 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 6000 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 1
+					}
+				}
+				59 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 4000 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 1
+					}
+				}
+				39 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 0
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 2400 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 1
+					}
+				}
+				23 = {
+					add_trait_xp = {
+						trait = demon_spirit
+						value = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+demon_spirit_empty_on_action = {}

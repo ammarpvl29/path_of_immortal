@@ -1,0 +1,6 @@
+immaculate_vitality_blossom_modifier = {
+    prowess = 5
+    stress_gain_mult = -1
+    stress_loss_mult = 1
+    advantage = 15
+}

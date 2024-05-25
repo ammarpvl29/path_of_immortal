@@ -1,0 +1,27 @@
+create_immaculate_vitality_blossom_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = immaculate_vitality_blossom
+		description = immaculate_vitality_blossom_description
+		visuals = flowers
+		template = immaculate_vitality_blossom_template
+		type = miscellaneous
+		wealth = scope:wealth
+		quality = scope:quality
+		modifier = immaculate_vitality_blossom_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = unique_artifact value = yes }
+		set_variable = {
+			name = blossom_flower
+			value = yes
+		}
+	}
+}

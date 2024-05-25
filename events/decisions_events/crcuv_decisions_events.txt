@@ -1,0 +1,208 @@
+namespace = cultivate_decisions
+##################################################
+# The Devourer appears.
+##################################################
+
+cultivate_decisions.2001 = {
+	type = character_event
+	title = cultivate_decisions.2001.t
+	desc = cultivate_decisions.2001.desc
+	theme = faith
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+        become_devourer_effect = yes
+		create_immaculate_vitality_blossom_effect = { OWNER = root }
+	}
+
+	option = {
+		name = cultivate_decisions.2001.a
+	}
+}
+
+##################################################
+# Become Demon Cultivator.
+##################################################
+
+cultivate_decisions.2002 = {
+	type = character_event
+	title = cultivate_decisions.2002.t
+	desc = cultivate_decisions.2002.desc
+	theme = witchcraft
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = scheme
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = scoped_ruler
+	}
+
+	option = {
+		name = cultivate_decisions.2002.a
+        become_demon_effect = yes
+	}
+}
+
+##################################################
+# Follow Human Cultivation.
+##################################################
+
+cultivate_decisions.2003 = {
+	type = character_event
+	title = cultivate_decisions.2003.t
+	desc = cultivate_decisions.2003.desc
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_peace_ensues"
+		save_scope_as = scoped_ruler
+        become_humancultivator_effect = yes
+	}
+
+	option = {
+		name = cultivate_decisions.2003.a
+	}
+}
+
+# Breakthrough demon 1
+cultivate_decisions.2020 = {
+    type = character_event
+    title = cultivate_decisions.2020.t
+    desc = cultivate_decisions.2020.desc
+    trigger = {
+        is_cultivator = yes
+    }
+    theme = faith
+    right_portrait = {
+        character = ROOT
+        animation = scheme
+    }
+    immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+        demon_breakthrough_effect = yes
+	}
+    option = {
+        name = cultivate_decisions.2020.a
+    }
+}
+
+# Breakthrough demon 2
+cultivate_decisions.2021 = {
+    type = character_event
+    title = cultivate_decisions.2021.t
+    desc = cultivate_decisions.2021.desc
+    trigger = {
+        is_cultivator = yes
+    }
+    theme = faith
+    right_portrait = {
+        character = ROOT
+        animation = scheme
+    }
+    immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+        breakthrough_effect = yes
+	}
+    option = {
+        name = cultivate_decisions.2021.a
+    }
+}
+
+# Breakthrough demon 3
+cultivate_decisions.2022 = {
+    type = character_event
+    title = cultivate_decisions.2022.t
+    desc = cultivate_decisions.2022.desc
+    trigger = {
+        is_cultivator = yes
+    }
+    theme = faith
+    right_portrait = {
+        character = ROOT
+        animation = scheme
+    }
+    immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+        breakthrough_effect = yes
+	}
+    option = {
+        name = cultivate_decisions.2022.a
+    }
+}
+
+# Breakthrough demon 4
+cultivate_decisions.2023 = {
+    type = character_event
+    title = cultivate_decisions.2023.t
+    desc = cultivate_decisions.2023.desc
+    trigger = {
+        is_cultivator = yes
+    }
+    theme = faith
+    right_portrait = {
+        character = ROOT
+        animation = personality_bold
+    }
+    immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+        breakthrough_effect = yes
+	}
+    option = {
+        name = cultivate_decisions.2023.a
+    }
+}
+
+# Breakthrough demon 5
+cultivate_decisions.2024 = {
+    type = character_event
+    title = cultivate_decisions.2024.t
+    desc = cultivate_decisions.2024.desc
+    trigger = {
+        is_cultivator = yes
+    }
+    theme = faith
+    right_portrait = {
+        character = ROOT
+        animation = war_over_win
+    }
+    immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+        breakthrough_effect = yes
+	}
+    option = {
+        name = cultivate_decisions.2024.a
+    }
+}
+
+# Breakthrough demon 6
+cultivate_decisions.2025 = {
+    type = character_event
+    title = cultivate_decisions.2025.t
+    desc = cultivate_decisions.2025.desc
+    trigger = {
+        is_cultivator = yes
+    }
+    theme = faith
+    right_portrait = {
+        character = ROOT
+        animation = celebrate_sword
+    }
+    immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+        breakthrough_effect = yes
+	}
+    option = {
+        name = cultivate_decisions.2025.a
+    }
+}

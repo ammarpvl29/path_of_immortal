@@ -1,0 +1,484 @@
+devouring = {
+    category = fame
+    name = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    NOT = {exists = this}
+                }
+                desc = trait_devouring
+            }
+        desc = trait_devouring_character
+        }
+    }
+    ruler_designer_cost = 0
+    icon = devourer_final.dds
+
+    # Char modifier
+    stress_gain_mult = 1
+    stress_loss_mult = -0.5
+    hostile_scheme_resistance_mult = 0.1
+    health = 0.5
+    diplomacy = -5
+    learning = 5
+    martial = 5
+    prowess = 15
+    
+
+    tracks = {
+        devour = {
+            10 = {
+                prowess_no_portrait = 2
+                hostile_scheme_resistance_mult = 0.3
+                stress_loss_mult = 0.1
+            }
+            50 = {
+                prowess_no_portrait = 2
+                hostile_scheme_resistance_mult = 0.5
+                stress_loss_mult = 0.15
+            }
+            100 = {
+                prowess_no_portrait = 2
+                hostile_scheme_resistance_mult = 0.7
+                stress_loss_mult = 0.2
+            }
+        }
+	}
+}
+
+# Demon cultivator
+demon = {
+	category = fame
+    opposites = {
+        human_cultivator
+    }
+    name = {
+    first_valid = {
+        triggered_desc = {
+            trigger = {
+                NOT = {exists = this}
+            }
+            desc = trait_demon
+            }
+        desc = trait_demon_character
+        }
+    }
+    ruler_designer_cost = 0
+    icon = demon_final.dds
+
+    # Char modifier
+    stress_gain_mult = 0.25
+    life_expectancy = 20
+    hostile_scheme_power_mult = 0.1
+    health = -0.1
+    diplomacy = -5
+    intrigue = 2
+    martial = 3
+    prowess = 5
+
+	opposite_opinion = -15
+    general_opinion = -20
+    good = no
+
+	triggered_opinion = {
+		check_missing = yes
+		ignore_opinion_value_if_same_trait = yes
+	}
+}
+
+# Human cultivator
+human_cultivator = {
+	category = fame
+    opposites = {
+        demon
+    }
+    name = {
+    first_valid = {
+        triggered_desc = {
+            trigger = {
+                NOT = {exists = this}
+            }
+            desc = trait_human_cultivator
+            }
+        desc = trait_human_cultivator_character
+        }
+    }
+    ruler_designer_cost = 0
+    icon = human_cultivation_final.dds
+
+    # Char modifier
+
+    life_expectancy = 20
+    hostile_scheme_resistance_mult = 0.1
+    health = 0.1
+    diplomacy = 5
+    intrigue = -2
+    martial = -3
+    prowess = 3
+
+	opposite_opinion = -15
+    general_opinion = 10
+    good = yes
+}
+
+# Demon rank 1
+dark_qi_absorption = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {exists = this}
+				}
+				desc = trait_dark_qi_absorption
+			}
+
+			desc = trait_dark_qi_absorption_character
+		}
+	}
+
+    icon = dark_qi_absorption_final.dds
+    
+	ruler_designer_cost = 50
+
+	group = demon_cultivation_realm
+	level = 1
+
+	health = 0.2
+	prowess_no_portrait = 5
+	monthly_lifestyle_xp_gain_mult = 0
+
+	immortal = yes
+
+	opposites = {
+		cultivation_realm
+	}
+
+    tracks = {
+		dark_qi = {
+			10 = {
+				prowess_no_portrait = 2
+			}
+			50 = {
+				prowess_no_portrait = 2
+            }
+			100 = {
+				prowess_no_portrait = 2
+			}
+		}
+	}
+}
+
+# Demon rank 2
+corruption_foundation = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {exists = this}
+				}
+				desc = trait_corruption_foundation
+			}
+
+			desc = trait_corruption_foundation_character
+		}
+	}
+
+    icon = corruption_foundation_final.dds
+    
+	ruler_designer_cost = 100
+
+	group = demon_cultivation_realm
+	level = 2
+
+	health = 0.4
+	prowess_no_portrait = 10
+	monthly_lifestyle_xp_gain_mult = -0.1
+	life_expectancy = 60
+	years_of_fertility = 45
+	fertility = -0.5
+	character_travel_speed = 5
+
+	immortal = yes
+
+	opposites = {
+		cultivation_realm
+	}
+
+    tracks = {
+		foundation = {
+			10 = {
+				prowess_no_portrait = 3
+			}
+			50 = {
+				prowess_no_portrait = 3
+            }
+			100 = {
+				prowess_no_portrait = 3
+			}
+		}
+	}
+}
+
+# Demon rank 3
+nether_formation = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {exists = this}
+				}
+				desc = trait_nether_formation
+			}
+
+			desc = trait_nether_formation_character
+		}
+	}
+
+    icon = nether_formation_final.dds
+
+    
+	ruler_designer_cost = 200
+
+	group = demon_cultivation_realm
+	level = 3
+
+	health = 0.6
+	prowess_no_portrait = 20
+	monthly_lifestyle_xp_gain_mult = -0.4
+	life_expectancy = 240
+	years_of_fertility = 180
+	fertility = -0.8
+	no_prowess_loss_from_age = yes
+	character_travel_speed = 10
+
+	immortal = yes
+
+	opposites = {
+		cultivation_realm
+	}
+
+    tracks = {
+		nether = {
+			10 = {
+				prowess_no_portrait = 3
+			}
+			50 = {
+				prowess_no_portrait = 3
+            }
+			100 = {
+				prowess_no_portrait = 3
+			}
+		}
+	}
+}
+
+# Demon rank 4
+infernal_soul = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {exists = this}
+				}
+				desc = trait_infernal_soul
+			}
+
+			desc = trait_infernal_soul_character
+		}
+	}
+
+    icon = infernal_soul_final.dds
+
+    
+	ruler_designer_cost = 400
+
+	group = demon_cultivation_realm
+	level = 4
+
+	health = 0.8
+	prowess_no_portrait = 45
+	monthly_lifestyle_xp_gain_mult = -0.7
+	life_expectancy = 540
+	years_of_fertility = 405
+	fertility = -0.9
+	no_prowess_loss_from_age = yes
+	character_travel_speed = 20
+
+	immortal = yes
+
+	opposites = {
+		cultivation_realm
+	}
+
+    tracks = {
+		soul = {
+			10 = {
+				prowess_no_portrait = 3
+			}
+			50 = {
+				prowess_no_portrait = 3
+            }
+			100 = {
+				prowess_no_portrait = 3
+			}
+		}
+	}
+}
+
+# Demon rank 5
+spirit_corruption = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {exists = this}
+				}
+				desc = trait_spirit_corruption
+			}
+
+			desc = trait_spirit_corruption_character
+		}
+	}
+	
+	icon = spirit_corruption_final.dds
+
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+
+	group = demon_cultivation_realm
+	level = 4
+
+	health = 0.8
+	prowess_no_portrait = 60
+	monthly_lifestyle_xp_gain_mult = -0.75
+	life_expectancy = 540
+	years_of_fertility = 405
+	fertility = -0.9
+	no_prowess_loss_from_age = yes
+	character_travel_speed = 20
+
+	immortal = no
+
+	opposites = {
+		cultivation_realm
+	}
+
+	tracks = {
+		corruption = {
+			10 = {
+				prowess_no_portrait = 3
+			}
+			50 = {
+				prowess_no_portrait = 3
+			}
+			100 = {
+				prowess_no_portrait = 3
+			}
+		}
+	}
+}
+
+# Demon rank 6
+demonic_ascendancy = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {exists = this}
+				}
+				desc = trait_demonic_ascendancy
+			}
+
+			desc = trait_demonic_ascendancy_character
+		}
+	}
+
+	icon = demonic_ascendancy.dds
+
+	
+	ruler_designer_cost = 1600
+
+	group = demon_cultivation_realm
+	level = 6
+
+	health = 2
+	prowess_no_portrait = 75
+	monthly_lifestyle_xp_gain_mult = -0.9
+	life_expectancy = 1140
+	years_of_fertility = 855
+	fertility = -0.975
+	no_prowess_loss_from_age = yes
+	character_travel_speed = 80
+
+	immortal = yes
+
+	opposites = {
+		cultivation_realm
+	}
+
+	tracks = {
+		demonic_essence = {
+			10 = {
+				prowess_no_portrait = 3
+			}
+			50 = {
+				prowess_no_portrait = 3
+			}
+			100 = {
+				prowess_no_portrait = 3
+			}
+		}
+	}
+}
+
+demon_spirit = {
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = {exists = this}
+				}
+				desc = trait_demon_spirit
+			}
+
+			desc = trait_demon_spirit_character
+		}
+	}
+
+	icon = demon_spirit_final_1.dds
+
+	
+	ruler_designer_cost = 3200
+
+	group = demon_cultivation_realm
+	level = 7
+
+	health = 5
+	prowess_no_portrait = 90
+	monthly_lifestyle_xp_gain_mult = -0.95
+	life_expectancy = 2940
+	years_of_fertility = 1440
+	fertility = -0.9875
+	no_prowess_loss_from_age = yes
+	character_travel_speed = 160
+
+	immortal = yes
+
+	opposites = {
+		cultivation_realm
+	}
+
+	tracks = {
+		spirit = {
+			10 = {
+				prowess_no_portrait = 3
+			}
+			50 = {
+				prowess_no_portrait = 3
+			}
+			100 = {
+				prowess_no_portrait = 3
+			}
+		}
+	}
+}

@@ -1,0 +1,475 @@
+on_birthday = {
+    on_actions = {
+        core_cultivation_flower_on_action
+		nascent_cultivation_flower_on_action
+		spirit_cultivation_flower_on_action
+    }
+}
+
+core_cultivation_flower_on_action = {
+
+	trigger = {
+		any_equipped_character_artifact = {has_variable = blossom_flower}
+        OR = {
+            has_trait = core_formation
+            has_trait = nether_formation
+        }
+		has_trait = spiritual_roots
+	}
+
+	effect = {
+
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 540 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+				98 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 270 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+				44 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 135 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+				17 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 90 years
+			random_list = {
+				10 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+				8 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 54 years
+			random_list = {
+				100 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+				0 = {
+					add_trait_xp = {
+						trait = core_formation
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = nether_formation
+						value = 4
+					}
+				}
+			}
+		}
+	}
+}
+
+nascent_cultivation_flower_on_action = {
+
+	trigger = {
+		any_equipped_character_artifact = {has_variable = blossom_flower}
+        OR = {
+            has_trait = nascent_soul
+            has_trait = infernal_soul
+        }
+		has_trait = spiritual_roots
+	}
+
+	effect = {
+		
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 1500 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+				30 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 750 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+				14 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 375 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+				65 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 250 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+				4 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 150 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 4
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+				2 = {
+					add_trait_xp = {
+						trait = nascent_soul
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = infernal_soul
+						value = 4
+					}
+				}
+			}
+		}
+	}
+}
+
+spirit_cultivation_flower_on_action = {
+
+	trigger = {
+		any_equipped_character_artifact = {has_variable = blossom_flower}
+        OR ={
+            has_trait = spirit_corruption
+            has_trait = spirit_severing
+        }
+		has_trait = spiritual_roots
+	}
+
+	effect = {
+		
+		if = {
+			limit = {
+				has_trait = poor_roots
+			}
+			# 1500 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 6
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+				30 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = normal_roots
+			}
+			# 750 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 6
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+				14 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = good_roots
+			}
+			# 375 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 6
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+				65 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = excellent_roots
+			}
+			# 250 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 6
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+				4 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = heavenly_roots
+			}
+			# 150 years
+			random_list = {
+				1 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 6
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+				2 = {
+					add_trait_xp = {
+						trait = spirit_severing
+						value = 0
+					}
+					add_trait_xp = {
+                        trait = spirit_corruption
+						value = 6
+					}
+				}
+			}
+		}
+	}
+}

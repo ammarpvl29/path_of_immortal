@@ -1,0 +1,36 @@
+﻿l_simp_chinese:
+    # Artifact
+    immaculate_vitality_blossom:0 "无暇至圣之花"
+    immaculate_vitality_blossom_description:0 "逆天至宝，未曾受到任何尘染，可以保存和强化肉身，启迪至纯之灵魂"
+
+    # decisions
+    become_devourer_decision:0 "噬天者"
+    become_devourer_decision_confirm:0 "我会超越我的极限！"
+    become_devourer_decision_desc:0 "在修真领域，存在着一种连上天都畏惧的禁术…此术可以让修真者成为吞噬者，能够吸收、吞噬他人的修为。选择这条道路，你就拥抱了 一种能够挑战一切、甚至是挑战自然秩序的力量，但要小心，强大的力量往往伴伴随着危险…"
+    become_devourer_decision_tooltip:0 "成为噬天者"
+
+
+    # Interactions
+    devouring_cultivation_interaction:0 "吞噬囚犯的修为"
+    devouring_cultivation_interaction_desc:0 "吞噬修为基础"
+    devour_cultivation_tooltip:0 "你将吸收此人的修为"
+
+    # Trait
+    trait_devouring:0 "无限潜力"
+    trait_devouring_desc:0 "吞噬者拥有吸收他人修为的能力，拥有着连天都畏惧的无限潜力"
+    trait_devouring_character:0 "吞噬者"
+    trait_track_devour:0 "吞噬阶段"
+    trait_track_devour_desc:0 "吞噬修炼能力的阶段"
+    
+    trait_demon:0 "邪修者"
+    trait_demon_desc:0 "因在 [ROOT.GetCharacter.GetHerHis] 修炼中使用恶魔技术而闻名，获得恶魔修炼者的标签"
+    trait_demon_character:0 "魔修者"
+    trait_track_demonic:0 "恶魔阶段"
+    trait_track_demonic_desc:0 "魔修的阶段"
+
+    # Event
+    cultivate_decisions.2001.t:0 "吞噬者之路"
+    cultivate_decisions.2001.desc:0 "选择了禁术…你将踏上了吞噬者的道路。当你吸收、吞噬别人的修为时，上天都将畏惧你的能力。这股连上天都畏惧的力量，如今你已收入囊中。 但请记住，上天在注视着你，他们…不会善待那些破坏自然秩序的人。"
+    cultivate_decisions.2001.a:0 "拥抱属于你的道路，成为吞噬者"
+
+    EXECUTION_DEVOUR_CULTIVATION:0 "吸收他们的修为！"

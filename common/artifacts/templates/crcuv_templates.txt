@@ -1,0 +1,13 @@
+immaculate_vitality_blossom_template = {
+    can_equip = {
+        always = yes
+    }
+    can_benefit = {
+        has_trait = devouring
+    }
+    fallback = {
+        health = 0.5
+        prowess = 5
+    }
+    unique = yes
+}

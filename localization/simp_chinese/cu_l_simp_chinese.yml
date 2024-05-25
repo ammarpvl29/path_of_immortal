@@ -1,0 +1,393 @@
+﻿l_simp_chinese:
+
+# Traits
+ 
+ #Roots
+  trait_poor_roots:0 "废品灵根"
+  trait_poor_roots_desc:0 "这样的灵根几乎没办法修炼…"
+  trait_normal_roots:0 "凡品灵根"
+  trait_normal_roots_desc:0 "一砖头能砸死一片的大众灵根"
+  trait_good_roots:0 "良品灵根"
+  trait_good_roots_desc:0 "如若努力修炼，可延年益寿，身体康健"
+  trait_excellent_roots:0 "极品灵根"
+  trait_excellent_roots_desc:0 "这样的灵根在修仙界已然是万人之上"
+  trait_heavenly_roots:0 "仙品灵根"
+  trait_heavenly_roots_desc:0 "睡觉都会长修为，羽化飞仙的敲门砖"
+ 
+ #Realms
+  #Qi Gathering
+
+   trait_qi_gathering:0 "练气"
+   trait_qi_gathering_desc:0 "该角色处于练气期"
+   trait_qi_gathering_debug:0 "练气调试"
+   trait_qi_gathering_debug_desc:0 "该角色处于练气期"
+   trait_track_stage:0 "练气阶段"
+   trait_track_stage_desc:0 "练气修炼期"
+   trait_qi_gathering_mortal:0 "练气"
+   trait_qi_gathering_mortal_desc:0 "该角色处于练气期"
+   trait_qi_gathering_mortal_debug:0 "练气凡人测试"
+   trait_qi_gathering_mortal_debug_desc:0 "该角色处于练气期"
+
+  #Foundation Establishment
+
+trait_foundation_establishment:0 "筑基"
+trait_foundation_establishment_desc:0 "该角色处于练气期"
+   trait_foundation_establishment_debug:0 "筑基调试"
+   trait_foundation_establishment_debug_desc:0 "该角色处于筑基期"
+   trait_track_foundation:0 "筑基阶段"
+   trait_track_foundation_desc:0 "筑基修炼期"
+   trait_foundation_establishment_mortal:0 "筑基"
+   trait_foundation_establishment_mortal_desc:0 "该角色处于筑基期"
+   trait_foundation_establishment_mortal_debug:0 "筑基凡人测试"
+   trait_foundation_establishment_mortal_debug_desc:0 "该角色处于筑基期"
+
+  #Core Formation
+  
+   trait_core_formation:0 "金丹"
+   trait_core_formation_desc:0 "该角色处于金丹期"
+   trait_core_formation_debug:0 "金丹调试"
+   trait_core_formation_debug_desc:0 "该角色处于金丹期"
+   trait_track_core:0 "金丹阶段"
+   trait_track_core_desc:0 "金丹修炼期"
+   trait_core_formation_mortal:0 "金丹"
+   trait_core_formation_mortal_desc:0 "该角色处于金丹期"
+   trait_core_formation_mortal_debug:0 "金丹凡人测试"
+   trait_core_formation_mortal_debug_desc:0 "该角色处于金丹期"
+
+  #Nascent Soul
+  
+   trait_nascent_soul:0 "元婴"
+   trait_nascent_soul_desc:0 "该角色处于元婴期"
+   trait_nascent_soul_debug:0 "元婴调试"
+   trait_nascent_soul_debug_desc:0 "该角色处于元婴期"
+   trait_track_soul:0 "元婴阶段"
+   trait_track_suol_desc:0 "该角色处于元婴期"
+   trait_nascent_soul_mortal:0 "元婴"
+   trait_nascent_soul_mortal_desc:0 "该角色处于元婴期"
+   trait_nascent_soul_mortal_debug:0 "元婴凡人测试"
+   trait_nascent_soul_mortal_debug_desc:0 "该角色处于元婴期"
+
+  #Spirit Severing
+  
+   trait_spirit_severing:0 "分神"
+   trait_spirit_severing_desc:0 "该角色处于分神期"
+   trait_spirit_severing_debug:0 "分神调试"
+   trait_spirit_severing_debug_desc:0 "该角色处于分神期"
+   trait_track_spirit:0 "分神阶段"
+   trait_track_spirit_desc:0 "该角色处于分神期"
+   trait_spirit_severing_mortal:0 "分神"
+   trait_spirit_severing_mortal_desc:0 "该角色处于分神期"
+   trait_spirit_severing_mortal_debug:0 "分神凡人测试"
+   trait_spirit_severing_mortal_debug_desc:0 "该角色处于分神期"
+
+   #Dao Seeking
+
+   trait_dao_seeking:0 "大乘"
+   trait_dao_seeking_desc:0 "该角色处于大乘期"
+   trait_dao_seeking_debug:0 "大乘调试"
+   trait_dao_seeking_debug_desc:0 "该角色处于大乘期"
+   trait_track_dao:0 "大乘阶段"
+   trait_track_dao_desc:0 "该角色处于大乘期"
+   trait_dao_seeking_mortal:0 "大乘"
+   trait_dao_seeking_mortal_desc:0 "该角色处于大乘期"
+   trait_dao_seeking_mortal_debug:0 "大乘凡人测试"
+   trait_dao_seeking_mortal_debug_desc:0 "该角色处于大乘期"
+
+   #Immortal Ascension
+
+   trait_demon_spirit:0 "羽化成仙"
+   trait_demon_spirit_desc:0 "该角色处于羽化成仙期"
+   trait_demon_spirit_debug:0 "羽化成仙调试"
+   trait_demon_spirit_debug_desc:0 "该角色处于羽化成仙期"
+   trait_track_ascension:0 "羽化成仙阶段"
+   trait_track_ascension_desc:0 "该角色处于羽化成仙期"
+
+#Decisions
+
+   give_spiritual_roots_decision:0 "感悟天地间灵气"
+   qive_spiritual_roots_decision_desc:0 "感悟并寻找你身体内在的灵根"
+   give_spiritual_roots_decision_selection_tooltip:0 "选择你的灵根"
+   give_spiritual_roots_decision_tooltip:0 "开始搜寻灵气"
+   give_spiritual_roots_decision_confirm:0 "开始感悟"
+
+   give_spiritual_roots_decision_effect_tooltip:0 "选择你的灵根"
+
+   begin_cultivation_decision:0 "开始修炼"
+   begin_cultivation_decision_desc:0 "你踏上了属于自己的修真之旅"
+   begin_cultivation_decision_selection_tooltip:0 "获得首个修真特质"
+   begin_cultivation_decision_tooltip:0 "开始修炼"
+   begin_cultivation_decision_confirm:0 "开始你的修炼"
+
+   begin_cultivation_decision_effect_tooltip:0 "开始培养灵根"
+ 
+   breakthrough_decision_1:0 "突破境界到筑基"
+   breakthrough_decision_1_desc:0 "突破筑基境界"
+   breakthrough_decision_1_selection_tooltip:0 "稳固你当前的境界"
+   breakthrough_decision_1_tooltip:0 "感受筑基"
+   breakthrough_decision_1_confirm:0 "确定要突破当前境界吗？"
+   breakthrough_decision_1_valid_description:0 "达到练气期的巅峰以突破到此境界"
+
+   breakthrough_decision_2:0 "突破境界到金丹"
+   breakthrough_decision_2_desc:0 "突破金丹境界"
+   breakthrough_decision_2_selection_tooltip:0 "稳固你当前的境界"
+   breakthrough_decision_2_tooltip:0 "感受金丹"
+   breakthrough_decision_2_confirm:0 "确定要突破当前境界吗？"
+   breakthrough_decision_2_valid_description:0 "达到筑基期的巅峰以突破到此境界"
+
+   breakthrough_decision_3:0 "突破境界到元婴"
+   breakthrough_decision_3_desc:0 "突破元婴境界"
+   breakthrough_decision_3_selection_tooltip:0 "稳固你当前的境界"
+   breakthrough_decision_3_tooltip:0 "感受元婴"
+   breakthrough_decision_3_confirm:0 "确定要突破当前境界吗？"
+   breakthrough_decision_3_valid_description:0 "达到金丹期的巅峰以突破到此境界"
+
+   breakthrough_decision_4:0 "突破境界到分神"
+   breakthrough_decision_4_desc:0 "突破分神境界"
+   breakthrough_decision_4_selection_tooltip:0 "稳固你当前的境界"
+   breakthrough_decision_4_tooltip:0 "感受分神"
+   breakthrough_decision_4_confirm:0 "确定要突破当前境界吗？"
+   breakthrough_decision_4_valid_description:0 "达到元婴期的巅峰以突破到此境界"
+
+   breakthrough_decision_5:0 "突破境界到大乘"
+   breakthrough_decision_5_desc:0 "突破大乘境界"
+   breakthrough_decision_5_selection_tooltip:0 "稳固你当前的境界"
+   breakthrough_decision_5_tooltip:0 "感受大乘"
+   breakthrough_decision_5_confirm:0 "确定要突破当前境界吗？"
+   breakthrough_decision_5_valid_description:0 "达到分神期的巅峰以突破到此境界"
+
+   breakthrough_decision_6:0 "突破境界到羽化成仙"
+   breakthrough_decision_6_desc:0 "突破羽化成仙境界"
+   breakthrough_decision_6_selection_tooltip:0 "稳固你当前的境界"
+   breakthrough_decision_6_tooltip:0 "感受羽化成仙"
+   breakthrough_decision_6_confirm:0 "确定要突破当前境界吗？"
+   breakthrough_decision_6_valid_description:0 "达到大乘期的巅峰以突破到此境界"
+
+   breakthrough_decision_effect_tooltip:0 "你突破到了下一个境界"
+
+   focus_on_cultivation:0 "专注于修炼"
+   focus_on_cultivation_tooltip:0 "这个决定会让你放弃王位"
+   focus_on_cultivation_desc:0 "放弃王位，专注修炼"
+   focus_on_cultivation_effect_tooltip:0 "脱离俗世，专注修仙"
+   focus_on_cultivation_confirm:0 "禅位"
+
+#Events
+
+   cultivation_important_event.001.title:0 "你感受到了灵气的回应"
+   cultivation_important_event.001.desc:0 "你从天地间感悟到了自己的灵性，现在你要做出选择了"
+   cultivation_important_event.001.a:0 "拥抱你的天命灵根，冲个648"
+   cultivation_important_event.001.b:0 "时也，运也，命也"
+   cultivation_important_event.001.c:0 "拒绝天地间的灵气"
+
+   cultivation_important_event.011.title:0 "感受筑基"
+   cultivation_important_event.011.desc:0 "你进入了筑基境界"
+   cultivation_important_event.011.a:0 "你的突破成功了！"
+
+   cultivation_important_event.012.title:0 "感受金丹"
+   cultivation_important_event.012.desc:0 "你进入了金丹境界"
+   cultivation_important_event.012.a:0 "你的突破成功了！"
+
+   cultivation_important_event.013.title:0 "感受元婴"
+   cultivation_important_event.013.desc:0 "你进入了元婴境界"
+   cultivation_important_event.013.a:0 "你的突破成功了！"
+
+   cultivation_important_event.014.title:0 "感受分神"
+   cultivation_important_event.014.desc:0 "你进入了分神境界"
+   cultivation_important_event.014.a:0 "你的突破成功了！"
+
+   cultivation_important_event.015.title:0 "感受大乘"
+   cultivation_important_event.015.desc:0 "你进入了大乘境界"
+   cultivation_important_event.015.a:0 "你的突破成功了！"
+
+   cultivation_important_event.016.title:0 "感受羽化飞仙"
+   cultivation_important_event.016.desc:0 "你进入了羽化飞仙境界"
+   cultivation_important_event.016.a:0 "你的突破成功了！"
+
+   #Random Events
+
+   #Books
+
+   cultivation_random_event.01.title:0 "奇怪之书"
+   cultivation_random_event.01.desc:0 "你在一栋废弃的藏书室内搜寻时，意外发现了一本奇怪的书。\n\n仔细翻阅后，你发现这是一本修仙届前辈留下的练气期文献。\n\n这本书可以帮助你收集天地间的灵气，教你如何运用身体中-气-的存在，并加以改善你的身体情况。"
+   cultivation_random_event.01.a:0 "带走这本书，加以研究。"
+
+   cultivation_random_event.02.title:0 "珍藏之书"
+   cultivation_random_event.02.desc:0 "你在森林中感受天体灵气时，意外发现了一个隐秘的洞穴。\n\n在洞穴里，你发现了一本尘封已久的古书，其中记载了关于筑基期相关的很多感悟与心得。\n\n书中满满的文字和绘图，详细的记载着前辈的经验，这本书在筑基期会帮到你很多。"
+   cultivation_random_event.02.a:0 "带走这本书，加以研究。"
+
+   cultivation_random_event.03.title:0 "灵气之书"
+   cultivation_random_event.03.desc:0 "旅行时，你偶然发现了一座藏在深山中的古庙。\n\n其中，有一本保存状态极佳的古书，散发着些许灵气。\n\n书中的内容围绕着如何将身体中的能量与灵魂本质炼化成丹，这本书中的内容对于金丹期的修士来说可以说是如鱼得水。"
+   cultivation_random_event.03.a:0 "带走这本书，加以研究。"
+
+   cultivation_random_event.04.title:0 "传说之书"
+   cultivation_random_event.04.desc:0 "在一次外出修炼时，你发现一座废墟，探索时偶然发现了一处几近坍塌的密室。\n\n摸索许久无果，正当你要放弃折返时，突然感受到一旁石堆中似乎有些许灵气，扒开碎石发现一本极其精致的古籍。\n\n这是一本在修仙界可以称之为顶级的修炼文献，其中详细记载了关于如何释放肉体全部潜力，获得几乎永生神性的内容。"
+   cultivation_random_event.04.a:0 "带走这本书，加以研究。"
+
+   cultivation_random_event.05.title:0 "一株奇异的仙草"
+   cultivation_random_event.05.desc:0 "在附近的荒野里，有一种你最近才知道的神奇仙草。\n\n你被告知，这仙草有着极其神奇的功效，而且想要获得…并不需要太多的时间和精力。"
+   cultivation_random_event.05.a:0 "去寻找这株仙草"
+   cultivation_random_event.05.a.tooltip:0 "花几天的时间到达仙草的所在地"
+   cultivation_random_event.05.b:0 "无视这株仙草"
+
+   cultivation_random_event.051.title:0 "仙草"
+   cultivation_random_event.051.desc:0 "经过几天的长途跋涉，你到达了仙草所在地，但这里有一头凶猛的野兽看守着仙草。\n\n野兽体型巨大，目露凶光。但它对攻击你并不感兴趣，而是更着重于保护仙草。\n\n你可以攻击野兽抢走仙草…或者别的什么办法？"
+   cultivation_random_event.051.a:0 "战斗，爽！"
+   cultivation_random_event.051.a.duel_desc:0 "你决定与野兽战斗以获得草药。这个生物强壮凶猛，但你决心成功。"
+   cultivation_random_event.051.b:0 "动脑，爽！"
+   cultivation_random_event.051.b.duel_desc:0 "你试图用你的智慧和狡猾智胜野兽。这个生物很强大，但你相信你能智胜它。"
+   cultivation_random_event.051.win_desc:0 "你整死了这头畜生！"
+   cultivation_random_event.051.win_desc.tooltip:0 "你不仅弄死了这头畜生，还获得了心心念念的仙草！"
+   cultivation_random_event.051.wounded_desc:0 "你整死了这头畜生，但同时自己也负伤了。"
+   cultivation_random_event.051.wounded_desc.tooltip:0 "你弄死了这头畜生，但也受伤了，好在你获得了心心念念的仙草！"
+   cultivation_random_event.051.lose_desc:0 "你被野兽打败了"
+   cultivation_random_event.051.lose_desc.tooltip:0 "你没能战胜野兽，逃离了这里"
+   cultivation_random_event.051.c:0 "算了，润！"
+   cultivation_random_event.051.c.tooltip:0 "想了想，还是不冒生命危险了，润！"
+
+   cultivation_random_event.052.desc:0 "你成功击败了野兽并获得了草药。\n\n当你摘下它时，你会感觉到一股能量在你的身体里流动。这种草药确实很特别，具有强大的灵性，可以增强你的修炼能力。"
+   cultivation_random_event.052.a:0 "服用草药并使用它来加快你的修炼进度"
+
+   cultivation_random_event.054.desc:0 "你没能打败野兽，被迫撤退。\n\nT这个生物太强大了，你根本无法战胜，你意识到自己还是太菜了，无法面对这样的挑战。\n\n两手空空，受伤离场。"
+   cultivation_random_event.054.a:0 "治疗恢复受的伤"
+   cultivation_random_event.054.a.tooltip:0 "在尝试任何更危险的任务之前，你决定专注于先治疗和恢复你的伤害。"
+
+   cultivation_random_event.055.toast:0 "你拿了仙草"
+   cultivation_random_event.055.good:0 "这种仙草很有效，可以用它来加快你的修炼进度"
+   cultivation_random_event.055.great:0 "这种草药很强大，大大提高了你的修炼能力"
+   cultivation_random_event.055.enormous:0 "这种草药极其神奇，它极大地提高了你的修炼能力"
+
+   #Encounters
+
+   cultivation_random_event.06.title:0 "受伤的陌生人"
+   cultivation_random_event.06.desc:0 "你遇到了一个散修修真者，他需要帮助。\n\n他受了重伤，非常虚弱，似乎受到了强大敌人的攻击。\n\n你可以选择帮助他们，也可以让他听天由命。"
+   cultivation_random_event.06.a:0 "帮助他"
+   cultivation_random_event.06.a.tooltip:0 "你决定尽你所能，全力帮助他恢复"
+   cultivation_random_event.06.b:0 "弄死他"
+   cultivation_random_event.06.b.tooltip:0 "你决定趁火打劫，弄死他搜刮一下看他身上有啥好东西"
+   cultivation_random_event.06.c:0 "听天由命吧"
+   cultivation_random_event.06.c.tooltip:0 "你决定让他听天由命，你则继续自己的旅程。"
+
+   cultivation_random_event.061.desc:0 "你帮助了他并治疗了他的伤口。\n\n这位散修很感激你的帮助，并表示愿意给你一粒宝贵的丹药作为他们的感谢。并表示这药丸需要立即服用才能生效。"
+   cultivation_random_event.061.a:0 "接受丹药并食用"
+   cultivation_random_event.061.a.tooltip:0 "只要吃不死，就往死里吃。奥里给！干了兄弟们！"
+
+   cultivation_random_event.062.toast:0 "你吃了丹药"
+   cultivation_random_event.062.good:0 "丹药有效，增强你的修炼"
+   cultivation_random_event.062.great:0 "丹药威力巨大，大大提升了你的修炼能力"
+   cultivation_random_event.062.enormous:0 "这丹药非同寻常，极大地提高了你的修炼能力"
+   cultivation_random_event.062.roots:0 "这丹药…过于神奇，好像能改善你的灵根！"
+
+   cultivation_random_event.063.desc:0 "你杀死了他并搜查了他的身体以寻找贵重物品。\n\n你发现了一些有趣的物品，包括一种似乎具有强大属性的神秘药丸。旁边还有说明书和包装盒，你仔细翻看了一下，发现药丸保质期快过了，你需要需要立即食用才能生效。"
+   cultivation_random_event.063.a:0 "吃下药丸，看看会发生什么"
+   cultivation_random_event.063.a.tooltip:0 "只要吃不死，就往死里吃。奥里给！干了兄弟们！"
+
+
+   cultivation_random_event.07.title:0 "远方的战斗"
+   cultivation_random_event.07.desc:0 "你遇到一群正在进行激烈战斗的修炼者。\n\n双方实力差距很大\n\n你可以选择加入战斗并选择帮助较强的一方或者较弱的一方。又或者…在安全距离外购买一份爆米花开始观看战斗。"
+   cultivation_random_event.07.a:0 "帮助强者"
+   cultivation_random_event.07.a.duel_desc:0 "获胜的几率更高"
+   cultivation_random_event.07.a.win_desc:0 "你胜利了"
+   cultivation_random_event.07.a.win_desc.tooltip:0 "中等修炼经验增益"
+   cultivation_random_event.07.b:0 "帮助弱者"
+   cultivation_random_event.07.b.duel_desc:0 "获胜的几率更低"
+   cultivation_random_event.07.b.win_desc:0 "你胜利了"
+   cultivation_random_event.07.b.win_desc.tooltip:0 "较多修炼经验增益"
+   cultivation_random_event.07.lose_desc:0 "你被打败了"
+   cultivation_random_event.07.lose_desc.tooltip:0 "受伤"
+   cultivation_random_event.07.c:0 "吃爆米花，观察战斗"
+   cultivation_random_event.07.c.tooltip:0 "较少修炼经验增益"
+
+   cultivation_random_event.071.desc:0 "你在安全距离内观察战斗，并观看栽培者以技巧和决心进行战斗。\n\n通过观察他们的动作和战术，你学到了一些新的技术和策略，并获得了一些有价值的见解，帮助你提高了自己的修炼速度。\n\n你在战斗结束前离开了，以免被发现。"
+   cultivation_random_event.071.a:0 "巩固学到的心得"
+
+   cultivation_random_event.0711.toast:0 "修炼心得"
+   cultivation_random_event.0711.toast.tooltip:0 "你从中获得了少量的经验，可以帮助你提高修炼"
+
+   cultivation_random_event.072.desc:0 "战斗非常激烈，但你成功地保护住了自己没有受伤，并为胜利做出了贡献。\n\n你的努力被其他修炼者注意到，他们会给你一颗宝贵的修炼药丸作为感谢。\n\n并表示药丸需要立即食用才能生效。"
+   cultivation_random_event.072.a:0 "接受药丸并食用"
+
+   cultivation_random_event.0721.toast:0 "修炼心得 "
+   cultivation_random_event.0721.toast.tooltip:0 "你获得了中等的增益，可以帮助你提高修炼"
+
+   cultivation_random_event.073.desc:0 "战斗非常激烈，你与更强大的对手战斗时，身体几近极限状态。\n\n但好在尽管困难重重，你还是坚持了下来，并成功扭转了这场战斗对你不利的情况。\n\n你被其他修炼者誉为英雄，他们为你提供一种非常罕见且有价值的药丸作为感谢。并表示这药丸需要立即食用才能生效。"
+   cultivation_random_event.073.a:0 "接受药丸并食用"
+
+   cultivation_random_event.0731.toast:0 "修炼心得"
+   cultivation_random_event.0731.toast.tooltip:0 "你获得较多的增益，可以帮助你提高修炼"
+
+   cultivation_random_event.074.desc:0 "你在战斗中被击败了。\n\n对方这些修炼者太强大了，你根本无法与其抗衡，身边的其他修炼者都被杀了。但谢天谢地，你趁乱成功逃离了，虽然受了伤，但还活着。\n\n你意识到你还是太菜了，根本无法面对如此强大的对手。"
+   cultivation_random_event.074.a:0 "疗伤休息"
+
+   cultivation_random_event.0741.toast:0 "受伤"
+   cultivation_random_event.0741.toast.tooltip:0 "你需要好好恢复才能尝试任何更危险的冒险"
+
+
+   cultivation_random_event.08.title:0 "隐藏的洞穴"
+   cultivation_random_event.08.desc:0 "你偶然发现了一个隐藏的洞穴，据说里面有一件强大的神器。\n\n这个洞穴黑暗而不祥，似乎许多修炼者都试图取回神器，但都失败了。你决定进入洞穴一探究竟，同时还要警惕里面可能存在的危险。"
+   cultivation_random_event.08.a:0 "进入洞穴"
+
+   cultivation_random_event.081.desc:0 "你进入洞穴，发现自己置身于一个由扭曲的隧道和黑暗通道组成的迷宫中。空气中弥漫着古老魔法的气味，你可以感受到神器的力量在召唤你。\n\n你沿着能量的方向，最终来到一个隐藏的房间，发现了神器。这是一块强大的护身符，可以增强你的修炼能力，赋予你不可思议的能力。\n\n它由一道似乎无法穿透的强大屏障守卫。你可以选择尝试突破这道屏障，索取神器，也可以…想想别的办法"
+   cultivation_random_event.081.a:0 "尝试干碎这道屏障"
+   cultivation_random_event.081.a.duel_desc:0 "用你所学的一切，尝试干碎屏障"
+   cultivation_random_event.081.win_desc:0 "你成功干碎了屏障"
+   cultivation_random_event.081.win_desc.tooltip:0 "拿到了神器 "
+   cultivation_random_event.081.lose_desc:0 "屏障纹丝未动"
+   cultivation_random_event.081.lose_desc.tooltip:0 "放火尝试烧毁屏障"
+   cultivation_random_event.081.b:0 "算了，爷不要了"
+
+   cultivation_random_event.082.desc:0 "你突破了障碍并获得了神器。\n\n这强大的神器，可以增强你在战斗中的能力，并赋予你不可思议的能力。\n\n当你把神器握在手中时，感觉到能量在你的身体里涌动，这时你意识到，它接下来要为你的修炼之旅服务了。"
+   cultivation_random_event.082.a:0 "离开这里"
+
+   cultivation_random_event.083.desc:0 "你无法冲破障碍拿到神器。\n\n一切的办法都用尽了，你心灰意冷。\n\n你意识到还是自己太菜了，无法打破这么强大的屏障，悻悻离开。"
+   cultivation_random_event.083.a:0 "离开这里"
+
+
+   cultivation_random_event.09.desc:0 "你遇到了一个神秘人，他自称是一个强大的修炼者。这个人物提出教你一种强大的技心法，可以增强你的修炼能力，但他索要一件有价值的物品作为回报。你可以选择接受这个提议并给出一件有价值的物品，也可以拒绝并继续走自己的路。"
+
+
+   cultivation_random_event.10.desc:0 "你发现了一个隐藏的宝库，里面装满了贵重的物品和文物。这个宝库被一道似乎无法穿透的强大屏障所守护。你可以选择尝试突破这道屏障并索取宝藏，也可以任其自生自灭。"
+
+
+   cultivation_random_event.11.desc:0 "你遇到一群正在进行友谊赛的修炼者。修炼者正在一系列挑战中测试他们的技能和能力，看起来他们玩得很开心。你可以选择加入比赛并展示自己的技能，也可以在安全距离外观看。"
+
+#Modifiers
+
+#Artifacts
+
+   qi_cultivation_book:0 "修真录"
+   qi_cultivation_book_desc:0 "一本记载着修炼基础知识的书"
+   foundation_cultivation_book:0 "筑基录"
+   foundation_cultivation_book_desc:0 "一本可以帮助你在筑基期加速修炼的书"
+   core_cultivation_book:0 "金丹录"
+   core_cultivation_book_desc:0 "一本可以帮助你在金丹期加速修炼的书"
+   nascent_cultivation_book:0 "元婴录"
+   nascent_cultivation_book_desc:0 "一本可以帮助你在元婴期加速修炼的书"
+
+   common_cultivation_talisman:0 "筑基级护身符"
+   common_cultivation_talisman_desc:0 "增强你力量的普通护身符"
+   masterwork_cultivation_talisman:0 "金丹级护身符"
+   masterwork_cultivation_talisman_desc:0 "个罕见的能大大增强你力量的符"
+   famed_cultivation_talisman:0 "元婴级护身符"
+   famed_cultivation_talisman_desc:0 "一个传说中的护身符，可以极大地增强你的力量"
+   illustrious_cultivation_talisman:0 "分神级护身符"
+   illustrious_cultivation_talisman_desc:0 "一个将你的力量提升到极致的神话符"
+
+#Succession
+   sect_elective_succession_law:0 "流派选修"
+   sect_elective_succession_law_pass_tooltip:0 "你必须是修仙者"
+   sect_elective_succession_law_effects:1 " [ruler|E] 和所有直系, 成年人 [de_jure|E] 一个或两个附庸 [ranks|E] 低于 [title|E] 可以提名 [title_heir|E] 从大多数 [powerful_vassal|E] 其中包括统治者的 [extended_family|E] 和任何可能的 [claimants|E]."
+
+   sect_elective_candidates:0 "家族, 宣称者与候选人"
+   sect_elective_candidates_tooltip:1 "为了成为一名有效的候选人，一个角色必须满足以下条件之一:\n$EFFECT_LIST_BULLET$ [extended_family|E] 成员不得是神权或共和制继承人\n$EFFECT_LIST_BULLET$宣称者 [claimant|E] 他不是神权政体或共和政体的继承人\n$EFFECT_LIST_BULLET$有效的封建制成员 [elector|E] "
+   sect_elective_electors:0 "统治者和附庸"
+   sect_elective_electors_tooltip:0 "为了成为有效的 [elector|E] 在选举时，封臣必须满足以下所有条件:\n$EFFECT_LIST_BULLET$是一个 [de_jure|E] 封臣的头衔\n$EFFECT_LIST_BULLET$成为头衔的直接附庸 \n$EFFECT_LIST_BULLET$只是比 [ranks|E] 低一两个级别"
+
+   tooltip_sect_vote_strength_is_qi_gathering_cultivator:0 "练气期修炼: $VALUE|=+0$"
+   tooltip_sect_vote_strength_is_foundation_establishment_cultivator:0 "筑基期修炼: $VALUE|=+0$"
+   tooltip_sect_vote_strength_is_core_formation_cultivator:0 "金丹期修炼: $VALUE|=+0$"
+   tooltip_sect_vote_strength_is_nascent_soul_cultivator:0 "元婴期修炼: $VALUE|=+0$"
+   tooltip_sect_vote_strength_is_spirit_severing_cultivator:0 "分神期修炼: $VALUE|=+0$"
+   tooltip_sect_vote_strength_is_dao_seeking_cultivator:0 "大乘期修炼: $VALUE|=+0$"
+   tooltip_sect_vote_strength_is_demon_spirit_cultivator:0 "羽化飞仙期修炼: $VALUE|=+0$"
+
+   tooltip_sect_elector_vote_spiritual_roots_positive:0 "灵根: $VALUE|=+0$"
+   tooltip_sect_elector_vote_cultivation_realm_positive:0 "修炼境界: $VALUE|=+0$"

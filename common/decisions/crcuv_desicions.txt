@@ -1,0 +1,416 @@
+# Become The Devourer
+become_devourer_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+
+    desc = become_devourer_decision_desc
+    selection_tooltip = become_devourer_decision_tooltip
+    major = yes
+    sort_order = 70
+
+    is_shown = {
+        is_ruler = yes
+        is_landed = yes
+        OR = {
+            is_cultivator = yes
+            is_demon_cultivator = yes
+        }
+		NOR = {  #Can only do it once.
+            has_trait = devouring
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_became_heaven_devourer
+			}
+		}
+    }
+
+    is_valid = {
+        OR = {
+            is_nether_plus = yes
+            is_core_plus = yes
+        }
+        OR = {
+            has_trait = demon
+            faith = {has_doctrine = tenet_ritual_cannibalism}
+            piety_level >= 4
+        }
+        prestige_level >= 4
+        learning >= 20
+    }
+
+    is_valid_showing_failures_only = {
+        is_capable_adult = yes
+        is_imprisoned = no
+        is_at_war = no
+    }
+
+    effect = {
+        show_as_tooltip = {
+            become_devourer_effect = yes
+        }
+        
+        trigger_event = cultivate_decisions.2001
+
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_became_heaven_devourer
+			}
+		}
+    }
+}
+
+# Become demonic cultivator
+become_demon_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+
+    desc = become_demon_decision_desc
+    selection_tooltip = become_demon_decision_tooltip
+    major = yes
+    sort_order = 65
+
+    is_shown = {
+        is_ruler = yes
+        is_landed = yes
+        is_cultivator = yes
+		NOR = { 
+            has_trait = human_cultivator
+            has_character_flag = flag_become_demon_cultivator
+            }
+		}
+
+    is_valid = {
+        is_cultivator = yes
+        learning >= 10
+    }
+
+    is_valid_showing_failures_only = {
+        is_capable_adult = yes
+        is_imprisoned = no
+        is_at_war = no
+    }
+
+    effect = {
+        show_as_tooltip = {
+            become_demon_effect = yes
+        }
+        
+        trigger_event = cultivate_decisions.2002
+
+        hidden_effect = {
+            add_character_flag = flag_become_demon_cultivator
+            }
+        }
+}
+
+# Pick human cultivation way
+become_humancultivation_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+
+    desc = become_humancultivation_decision_desc
+    selection_tooltip = become_humancultivation_decision_tooltip
+    major = yes
+    sort_order = 60
+
+    is_shown = {
+        is_ruler = yes
+        is_landed = yes
+        is_cultivator = yes
+		NOR = { 
+            has_trait = demon
+            has_character_flag = flag_become_human_cultivator 
+            }
+		}
+
+    is_valid = {
+        is_cultivator = yes
+    }
+
+    is_valid_showing_failures_only = {
+        is_capable_adult = yes
+        is_imprisoned = no
+        is_at_war = no
+    }
+
+    effect = {
+        show_as_tooltip = {
+            become_humancultivator_effect = yes
+        } 
+        trigger_event = cultivate_decisions.2003
+
+        hidden_effect = {
+            add_character_flag = flag_become_human_cultivator
+            }
+        }
+}
+
+# Cultivator can meditate and gain xp
+cultivate_in_seclusion_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+
+	desc = cultivate_in_seclusion_decision_desc
+	selection_tooltip = cultivate_in_seclusion_decision_tooltip
+
+	is_shown = {
+		OR = {
+			is_cultivator = yes
+            is_demon_cultivator = yes
+		}
+		holds_landed_title = yes
+	}
+
+	is_valid = {
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		location = capital_province
+	}
+
+	effect = {
+		custom_tooltip = cultivate_in_seclusion_tooltip
+		trigger_event = religious_decision.0201
+        hidden_effect = {
+            devour_cultivation_effect = yes
+        }
+	}
+
+	ai_check_interval = 60
+	cooldown = { months = 60 }	
+
+	ai_potential = {
+		is_at_war = no
+		stress >= 75
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+# Breakthrough to Corruption Foundation
+demon_breakthrough_decision_1 = {
+
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+
+    desc = demon_breakthrough_decision_1_desc
+    selection_tooltip = demon_breakthrough_decision_1_selection_tooltip
+
+    is_shown = {
+        has_trait = dark_qi_absorption
+    }
+
+    is_valid = {
+        has_trait_xp = {
+            trait = dark_qi_absorption
+            value = 100
+        }
+    }
+
+    ai_goal = yes
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 100
+    }
+
+    effect = {
+        trigger_event = {
+            id = cultivate_decisions.2020
+        }
+        show_as_tooltip = {
+            demon_breakthrough_decision_effect = yes
+        }
+    }
+}
+
+# Breakthrough to Nether Formation
+demon_breakthrough_decision_2 = {
+
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+
+    desc = demon_breakthrough_decision_2_desc
+    selection_tooltip = demon_breakthrough_decision_2_selection_tooltip
+
+    is_shown = {
+        has_trait = corruption_foundation
+    }
+
+    is_valid = {
+        has_trait_xp = {
+            trait = corruption_foundation
+            value = 100
+        }
+    }
+
+    ai_goal = yes
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 100
+    }
+
+    effect = {
+        trigger_event = {
+            id = cultivate_decisions.2021
+        }
+        show_as_tooltip = {
+            demon_breakthrough_decision_effect = yes
+        }
+    }
+}
+
+# Breakthrough to Infernal Soul
+demon_breakthrough_decision_3 = {
+
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+
+    desc = demon_breakthrough_decision_3_desc
+    selection_tooltip = demon_breakthrough_decision_3_selection_tooltip
+
+    is_shown = {
+        has_trait = nether_formation
+    }
+
+    is_valid = {
+        has_trait_xp = {
+            trait = nether_formation
+            value = 100
+        }
+    }
+
+    ai_goal = yes
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 100
+    }
+
+    effect = {
+        trigger_event = {
+            id = cultivate_decisions.2022
+        }
+        show_as_tooltip = {
+            demon_breakthrough_decision_effect = yes
+        }
+    }
+}
+
+# Breakthrough to Spirit Corruption
+demon_breakthrough_decision_4 = {
+
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+
+    desc = demon_breakthrough_decision_4_desc
+    selection_tooltip = demon_breakthrough_decision_4_selection_tooltip
+
+    is_shown = {
+        has_trait = infernal_soul
+    }
+
+    is_valid = {
+        has_trait_xp = {
+            trait = infernal_soul
+            value = 100
+        }
+    }
+
+    ai_goal = yes
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 100
+    }
+
+    effect = {
+        trigger_event = {
+            id = cultivate_decisions.2023
+        }
+        show_as_tooltip = {
+            demon_breakthrough_decision_effect = yes
+        }
+    }
+}
+
+# Breakthrough to Demonic Ascendancy
+demon_breakthrough_decision_5 = {
+
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+
+    desc = demon_breakthrough_decision_5_desc
+    selection_tooltip = demon_breakthrough_decision_5_selection_tooltip
+
+    is_shown = {
+        has_trait = spirit_corruption
+    }
+
+    is_valid = {
+        has_trait_xp = {
+            trait = spirit_corruption
+            value = 100
+        }
+    }
+
+    ai_goal = yes
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 100
+    }
+
+    effect = {
+        trigger_event = {
+            id = cultivate_decisions.2024
+        }
+        show_as_tooltip = {
+            demon_breakthrough_decision_effect = yes
+        }
+    }
+}
+
+# Breakthrough to Demon Spirit
+demon_breakthrough_decision_6 = {
+
+    picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+    major = yes
+
+    desc = demon_breakthrough_decision_6_desc
+    selection_tooltip = demon_breakthrough_decision_6_selection_tooltip
+
+    is_shown = {
+        has_trait = demonic_ascendancy
+    }
+
+    is_valid = {
+        has_trait_xp = {
+            trait = demonic_ascendancy
+            value = 100
+        }
+    }
+
+    ai_goal = yes
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 100
+    }
+
+    effect = {
+        trigger_event = {
+            id = cultivate_decisions.2025
+        }
+        show_as_tooltip = {
+            demon_breakthrough_decision_effect = yes
+        }
+    }
+}

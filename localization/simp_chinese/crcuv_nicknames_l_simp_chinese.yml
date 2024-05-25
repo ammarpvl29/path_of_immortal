@@ -1,0 +1,3 @@
+﻿l_simp_chinese:
+	nick_the_heaven_devourer:0 "天堂吞噬者"
+    nick_the_heaven_devourer_desc:1 "[CHARACTER.GetShortUINameNoTooltipNoFormat] 拥有独特而可怕的能力，可以吞噬吸收他人的修为，只需吞噬 [CharYourHerHis(CHARACTER)] 受害者的修为"

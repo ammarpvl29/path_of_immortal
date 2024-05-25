@@ -1,0 +1,121 @@
+# Devouring people cultivation
+devouring_cultivation_interaction = {
+    common_interaction = yes
+    category = interaction_category_prison
+    icon = icon_dead
+
+    desc = devouring_cultivation_interaction_desc
+
+	is_shown = {
+		scope:actor = {
+			has_trait = devouring
+		}
+		scope:recipient = {
+            OR = {
+				is_cultivator = yes
+				is_demon_cultivator = yes
+			}
+			is_imprisoned_by = scope:actor
+		}
+	}
+
+    cost = {}
+
+    on_accept = {
+        if = {
+			limit = { scope:recipient = { is_imprisoned_by = scope:actor } }
+			# Are you HumSac'ing the HoF of a faith that doesn't practice HumSac?
+			hidden_effect = {
+				scope:actor = {
+					humsacd_a_hof_effect = {
+						SACRIFICER = scope:actor
+						SACRIFICED_HOF = scope:recipient
+					}
+				}
+			}
+            if = {
+				limit = { always = scope:execution_devour_cultivation }
+				scope:actor = {
+					custom_tooltip = devour_cultivation_tooltip
+					if = {
+						limit = {
+                            has_trait = devouring
+                            OR = {
+								is_cultivator = yes
+								is_demon_cultivator = yes
+							}
+						}
+					}
+					stress_impact = {
+						base = high_stress_impact_gain
+						compassionate = miniscule_stress_impact_gain
+						forgiving = miniscule_stress_impact_gain
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					scope:recipient = { is_ai = no }
+					scope:actor = { is_ai = yes }
+				}
+				scope:recipient = { trigger_event = char_interaction.0170 }
+				show_as_tooltip = {
+					execute_prisoner_effect = {
+						VICTIM = scope:recipient
+						EXECUTIONER = scope:actor
+					}
+				}
+			}
+
+			else = {
+				scope:recipient = { trigger_event = char_interaction.0171 }
+				execute_prisoner_effect = {
+					VICTIM = scope:recipient
+					EXECUTIONER = scope:actor
+				}
+			}
+
+			if = {
+				limit = {
+					always = scope:execution_devour_cultivation
+					scope:actor.faith = {
+						has_doctrine = doctrine_pluralism_fundamentalist
+					}
+				}
+				scope:actor = {
+					add_piety = miniscule_piety_value
+				}
+			}
+
+			scope:actor = {
+				add_trait_xp = {
+					trait = devouring
+					value = 5
+				}
+                devour_cultivation_effect = yes
+				hidden_effect = {
+					send_interface_message = {
+						type = event_generic_neutral
+						title = msg_execute_prisoner
+						right_icon = scope:recipient
+						custom_tooltip = msg_execute_prisoner_desc
+					}
+				}
+			}
+        }
+    }
+
+    options_heading = execution_options_heading
+    send_option = {
+    is_shown = {
+        scope:actor = {
+            has_trait = devouring
+            }
+        }
+        flag = execution_devour_cultivation
+        localization = "EXECUTION_DEVOUR_CULTIVATION"
+	}
+	send_options_exclusive = yes
+	auto_accept = yes
+} 

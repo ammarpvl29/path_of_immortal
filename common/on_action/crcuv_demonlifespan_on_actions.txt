@@ -1,0 +1,370 @@
+on_birthday = {
+	on_actions = {
+		handle_demoncultivation_immortality
+	}
+}
+
+handle_demoncultivation_immortality = {
+	first_valid_on_action = {
+        handle_demonchild_cultivator_reached
+        handle_demonteen_cultivator_reached
+        handle_demonolder_teen_cultivator_reached
+        handle_demongrown_cultivator_reached
+        handle_demonyoung_adult_cultivator_reached
+        handle_demonadult_cultivator_reached
+        handle_demonolder_adult_cultivator_reached
+        handle_demonmiddle_age_cultivator_reached
+		handle_demonolder_middle_age_cultivator_reached
+		handle_demonelder_age_cultivator_reached
+	}
+}
+
+handle_demonchild_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 13
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 13
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 13
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 13
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 13
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 13
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 13
+    }
+}
+
+handle_demonteen_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 14
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 14
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 14
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 14
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 14
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 14
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 14
+    }
+}
+
+handle_demonolder_teen_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 15
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 15
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 15
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 15
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 15
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 15
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 15
+    }
+}
+
+handle_demongrown_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 16
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 16
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 16
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 16
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 16
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 16
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 16
+    }
+}
+
+handle_demonyoung_adult_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 18
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 18
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 18
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 18
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 18
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 18
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 18
+    }
+}
+
+handle_demonadult_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 20
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 20
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 20
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 20
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 20
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 20
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 20
+    }
+}
+
+handle_demonolder_adult_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 30
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 60
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 150
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 300
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 450
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 600
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 30
+    }
+}
+
+handle_demonmiddle_age_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 40
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 80
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 200
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 400
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 600
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 800
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 40
+    }
+}
+
+handle_demonolder_middle_age_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 50
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 100
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 250
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 500
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 750
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 1000
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 50
+    }
+}
+
+handle_demonelder_age_cultivator_reached = {
+    trigger = {
+        OR = {
+            AND = {
+                has_trait = dark_qi_absorption
+                age = 60
+            }
+            AND = {
+                has_trait = corruption_foundation
+                age = 120
+            }
+            AND = {
+                has_trait = nether_formation
+                age = 300
+            }
+            AND = {
+                has_trait = infernal_soul
+                age = 600
+            }
+            AND = {
+                has_trait = spirit_corruption
+                age = 900
+            }
+            AND = {
+                has_trait = demonic_ascendancy
+                age = 1200
+            }
+        }
+    }
+
+    effect = {
+        set_immortal_age = 60
+    }
+}

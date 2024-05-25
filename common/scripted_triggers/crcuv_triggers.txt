@@ -1,0 +1,86 @@
+is_demon_cultivator = {
+    OR = {
+        has_trait = dark_qi_absorption
+        has_trait = corruption_foundation
+        has_trait = nether_formation
+        has_trait = infernal_soul
+        has_trait = spirit_corruption
+        has_trait = demonic_ascendancy
+        has_trait = demon_spirit
+    }
+}
+
+is_normal_cultivator = {
+    is_cultivator = yes
+    NAND = {
+        has_trait = demon
+        has_trait = human_cultivator
+    }
+}
+
+demon_breakthrough_threshold = {
+    OR = {
+        has_trait_xp = {
+            trait = dark_qi_absorption
+            value = 100
+        }
+        has_trait_xp = {
+            trait = corruption_foundation
+            value = 100
+        }
+        has_trait_xp = {
+            trait = nether_formation
+            value = 100
+        }
+        has_trait_xp = {
+            trait = infernal_soul
+            value = 100
+        }
+        has_trait_xp = {
+            trait = spirit_corruption
+            value = 100
+        }
+        has_trait_xp = {
+            trait = demonic_ascendancy
+            value = 100
+        }
+    }
+}
+
+is_dark_qi_absorption_cultivator = {
+    has_trait = dark_qi_absorption
+}
+
+is_corruption_foundation_cultivator = {
+    has_trait = corruption_foundation
+}
+
+is_nether_formation_cultivator = {
+    has_trait = nether_formation
+}
+
+is_infernal_soul_cultivator = {
+    has_trait = infernal_soul
+}
+
+is_spirit_corruption_cultivator = {
+    has_trait = spirit_corruption
+}
+
+is_demonic_ascendancy_cultivator = {
+    has_trait = demonic_ascendancy
+}
+
+is_demon_spirit_cultivator = {
+    has_trait = demon_spirit
+}
+
+is_nether_plus = {
+    OR = {
+        has_trait = nether_formation
+        has_trait = infernal_soul
+        has_trait = spirit_corruption
+        has_trait = demonic_ascendancy
+        has_trait = demon_spirit
+    }
+}
