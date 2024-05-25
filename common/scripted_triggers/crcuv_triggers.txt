@@ -12,7 +12,7 @@ is_demon_cultivator = {
 
 is_normal_cultivator = {
     is_cultivator = yes
-    NAND = {
+    NOR = {
         has_trait = demon
         has_trait = human_cultivator
     }
